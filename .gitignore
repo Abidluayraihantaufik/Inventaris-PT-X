@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+*/node_modules/
+vendor/
+*/vendor/
+
+# Production Build
+dist/
+*/dist/
+dist-ssr/
+*/dist-ssr/
+build/
+*/build/
+
+# Environment Variables & Secrets
+.env
+.env.*
+!.env.example
+*.key
+auth.json
+
+# Laravel Specific
+backend/storage/*.key
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/framework/testing/*
+backend/storage/logs/*
+!backend/storage/framework/cache/.gitignore
+!backend/storage/framework/sessions/.gitignore
+!backend/storage/framework/views/.gitignore
+!backend/storage/logs/.gitignore
+backend/bootstrap/cache/*
+!backend/bootstrap/cache/.gitignore
+Homestead.json
+Homestead.yaml
+
+# Logs & Debug
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE & OS
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
